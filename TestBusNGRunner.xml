@@ -1,0 +1,18 @@
+<suite name="test1" verbose="1">
+	
+	
+	<test name="RedBusTicket">
+		<classes>
+			
+			<class name="com.app.RedbusProject.NavigateTest"></class>
+			<class name="com.app.RedbusProject.AccountPageTest"></class>
+			<class name="com.app.RedbusProject.BookBusTicketTest"></class>
+			
+			
+		</classes>	
+	</test>
+	
+	
+	
+</suite>
+

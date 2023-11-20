@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite for Login and Logout from Demo app" verbose="1">
+	<test name="TestCycle1">
+		<classes>
+			<class name="com.app.TestNGScripts.TestAnnotation">
+				<methods>
+					<include name="LoginWithValidCredentials"></include>
+				</methods>
+			</class>
+			<class name="com.app.TestNGScripts.BeforeAfterMethodAnnotation">
+				<methods>
+					<exclude name="logoutFromApplication"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
