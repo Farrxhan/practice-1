@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "873c30d2-ac3c-4f78-a221-4df9daf4631e",
+		"name": "OpenWeatherAPI Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715014"
+	},
+	"item": [
+		{
+			"name": "GetWeatherLatLon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?lat=44.34&lon=10.99&appid={{Global_API_Key}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "44.34"
+						},
+						{
+							"key": "lon",
+							"value": "10.99"
+						},
+						{
+							"key": "appid",
+							"value": "{{Global_API_Key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCityID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?id=1261481&appid={{Global_API_Key}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1261481"
+						},
+						{
+							"key": "appid",
+							"value": "{{Global_API_Key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCitybyName",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"City\", \"Bengaluru\"); //Environment Variable\r",
+							"\r",
+							"pm.globals.set(\"global_var1\", \"global_1\"); // Global Varialbe\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?q={{City}}&appid={{Global_API_Key}}&units=metric",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{City}}"
+						},
+						{
+							"key": "appid",
+							"value": "{{Global_API_Key}}"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLanguage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}?id=524901&lang=fr&appid={{Global_API_Key}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "524901"
+						},
+						{
+							"key": "lang",
+							"value": "fr"
+						},
+						{
+							"key": "appid",
+							"value": "{{Global_API_Key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

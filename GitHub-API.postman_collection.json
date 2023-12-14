@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "5a2f1aa0-d139-423b-8371-9aa3d6be6958",
+		"name": "GitHub-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31715014"
+	},
+	"item": [
+		{
+			"name": "GetAllRepo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificRepo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/repos/:owner/:repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						":owner",
+						":repos"
+					],
+					"variable": [
+						{
+							"key": "owner",
+							"value": "Farrxhan"
+						},
+						{
+							"key": "repos",
+							"value": "Amazon-With-Cucumber-"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
