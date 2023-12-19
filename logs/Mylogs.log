@@ -1,0 +1,13 @@
+[INFO ] 2023-12-19 13:48:09.359 [main] Log4jDemo -  this is information message
+[ERROR] 2023-12-19 13:48:09.363 [main] Log4jDemo -  this is an error message
+[FATAL] 2023-12-19 13:48:09.363 [main] Log4jDemo -  this is a fatal messgae
+[WARN ] 2023-12-19 13:48:09.363 [main] Log4jDemo -  this is a warning message
+[INFO ] 2023-12-19 14:00:35.817 [main] AssignmentDemo2 - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 14:02:08.846 [main] AssignmentDemo1 - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 14:37:53.463 [main] AssignmentDemo1 - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 14:41:10.589 [main] AssignmentDemo2 - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 14:47:30.987 [main] AssignmentDemo2 - Course End project - Assignment002 - POST request
+[INFO ] 2023-12-19 15:12:36.258 [main] AssignmentDemo1 - Course End Project - Assignment001 - Post Request
+[INFO ] 2023-12-19 15:12:41.504 [main] AssignmentDemo1 - Course End Project - Assignment001 - Get Request
+[INFO ] 2023-12-19 15:12:43.187 [main] AssignmentDemo1 - Course End Project - Assignment001 - Delete Request
+[INFO ] 2023-12-19 15:12:59.793 [main] AssignmentDemo2 - Course End project - Assignment002 - POST request
